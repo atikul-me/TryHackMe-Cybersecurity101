@@ -25,24 +25,25 @@ Alternate Data Streams (ADS) is a feature of the NTFS file system that allows hi
 Bash scripting allows automation of tasks using shell scripting syntax.
 Shebang (#!/bin/bash): Specifies which interpreter will execute the script.
 
-Sample Script (f_script.sh):
-Bash
+- **Sample Script (f_script.sh):**
+```Bash
 #!/bin/bash
 # Defines interpreter
 
 echo "Name?"
 read name
 echo "Welcome, $name"
-
+```
 Execution Permissions & Running Script:
-Grant Execution Permission:
-Bash
+-**Grant Execution Permission:**
+
+```Bash
 chmod +x f_script.sh
-
-Run Script:
-Bash
+```
+**Run Script:**
+```Bash
 ./f_script.sh
-
+```
 3. Local User & Group Management (Windows)
 GUI Tool Access:
 DOS
@@ -50,9 +51,11 @@ lusrmgr.msc
 (Run command to open Local Users and Groups console)
 
 4. Nmap Stealth Scan
-Stealth Scan Command:
-Bash
+**Stealth Scan Command:**
+
+```Bash
 nmap -sS 192.168.1.1
+```
 Mechanism: Does not complete the full TCP 3-way handshake. Sends only SYN packets to detect open ports stealthily.
 
 6. Network & System Commands (CMD & PowerShell)
@@ -63,17 +66,18 @@ netstat -abon
 (Displays all active network connections, listening ports, and associated executable processes)
 
 On PowerShell:
-Search Specific File Extension:
+- **Search Specific File Extension:**
 
-PowerShell
+```PowerShell
 Get-ChildItem | Where-Object "Extension" -eq ".txt"
+```
+- **Search File by Name Pattern:**
 
-Search File by Name Pattern:
-
-PowerShell
+```PowerShell
 Get-ChildItem | Where-Object -Property "Name" -like "Ship"
+```
+- **Calculate File Hash:**
 
-Calculate File Hash:
-
-PowerShell
+```PowerShell
 Get-FileHash -Path .\flag.txt
+```
