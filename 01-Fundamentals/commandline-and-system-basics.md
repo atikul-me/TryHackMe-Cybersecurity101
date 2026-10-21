@@ -13,7 +13,7 @@ Alternate Data Streams (ADS) is a feature of the NTFS file system that allows hi
 
 ### Commands for ADS:
 
-* **Build/Create ADS:**
+- **Build/Create ADS:**
   ```powershell
   Set-Content -Path "C:\Path\to\file.txt" -Stream "hidden" -Value "This is hidden"
 
@@ -35,12 +35,12 @@ read name
 echo "Welcome, $name"
 ```
 Execution Permissions & Running Script:
--**Grant Execution Permission:**
+- **Grant Execution Permission:**
 
 ```Bash
 chmod +x f_script.sh
 ```
-**Run Script:**
+- **Run Script:**
 ```Bash
 ./f_script.sh
 ```
@@ -51,7 +51,7 @@ lusrmgr.msc
 (Run command to open Local Users and Groups console)
 
 4. Nmap Stealth Scan
-**Stealth Scan Command:**
+- **Stealth Scan Command:**
 
 ```Bash
 nmap -sS 192.168.1.1
